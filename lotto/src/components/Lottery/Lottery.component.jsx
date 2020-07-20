@@ -17,7 +17,7 @@ class Lottery extends Component {
     generate = (e) => {
         this.setState(currentState => ({
             nums: currentState.nums.map(
-                n => Math.floor(Math.random() * this.props.maxNum) + 1
+                n => Math.round(Math.random() * this.props.maxNum) + 1
             )
         }));
     }
