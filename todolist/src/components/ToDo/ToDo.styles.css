@@ -1,0 +1,38 @@
+.ToDo {
+    margin: 5% 0%;
+}
+
+.ToDoContent {
+    display: inline-block;
+    min-width: 75%;
+}
+
+.ToDoContent:hover {
+    cursor: pointer;
+}
+
+li span {
+    margin: 0% 2%;
+}
+
+li span i{
+    padding: 1.5%;
+    border-radius: 100%;
+}
+
+li span i:hover {
+    cursor: pointer;
+    background-color: #dedad9;
+}
+
+/* Portrait */
+@media only screen 
+    and (min-device-width: 414px) 
+    and (max-device-width: 736px) 
+    and (-webkit-min-device-pixel-ratio: 3)
+    and (orientation: portrait) { 
+        .ToDoContent {
+            display: inline-block;
+            min-width: 75%;
+        }
+}

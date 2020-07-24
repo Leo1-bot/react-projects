@@ -1,0 +1,31 @@
+.NewToDoForm {
+    display: inline;
+}
+
+.NewToDoForm input {
+    width: 80%;
+    line-height: 2.5em;
+    margin-left: 20px;
+}
+
+.NewToDoForm button {
+    padding: 1em;
+    border-radius: 100%;
+    border: 0px;
+    color: white;
+    background-color: black;
+    margin: 3em 1em;
+}
+
+.NewToDoForm button:hover {
+    background-color: rgb(45, 48, 54);
+    cursor: pointer;
+}
+
+.NewToDoForm button:focus {
+    outline: 0;
+}
+
+i {
+    margin-right: 2%;
+}
