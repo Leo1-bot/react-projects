@@ -22,7 +22,7 @@ class BoxList extends Component {
                 <h1>Box Maker Thingy</h1>
                 <NewBoxForm addBox={this.addBox}/>
                 {this.state.boxes.map(box => 
-                    <Box style={box}/>
+                    <Box style={box} key={box.id}/>
                 )}
             </div>
         )

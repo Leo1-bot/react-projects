@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+import uuid from 'uuid/dist/v4';
 
 class NewBoxForm extends Component {
 
     state = {
-        height: 0,
-        width: 0,
-        bgcolor: ''
+        height: '',
+        width: '',
+        bgcolor: '',
+        id: uuid()
     }
 
     inputChange = (e) => {
@@ -22,7 +24,7 @@ class NewBoxForm extends Component {
     handleAddBox = (e) => {
         e.preventDefault();
         this.props.addBox(this.state);
-        this.setState({height: 0, width: 0, bgcolor: ''})
+        this.setState({height: '', width: '', bgcolor: '', id: uuid()})
     }
 
     render() {
